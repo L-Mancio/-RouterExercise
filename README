@@ -1,14 +1,14 @@
 Start:
 IMPORTANT:
-(1) Put router1.py in the path /home/mininet/pox/pox/misc
-(2) Put mytopo1.py in the path /home/mininet
+(1) Put router2.py in the path /home/mininet/pox/pox/misc
+(2) Put mytopo2.py in the path /home/mininet
 
 1.controller
 $ cd pox
-$ ./pox.py log.level --DEBUG misc.router1 misc.full_payload
+$ ./pox.py log.level --DEBUG misc.router2 misc.full_payload
 
 2.open another window, topo
-$ sudo mn --custom mytopo1.py --topo mytopo --mac --switch ovsk --controller remote
+$ sudo mn --custom mytopo2.py --topo mytopo2 --mac --switch ovsk --controller remote
 
 Test:
 1. Test  unknown address that yield unreachable message
