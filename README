@@ -27,3 +27,21 @@ in host3:
 $ iperf -s
 in host1:
 $ iperf -c 10.0.3.100
+
+AdvancedTopology is the same as router2.py with a few modifications to the code, and working iperf command between 2 different subnets
+Firewall.py is the last part of the mininet tutorial linked here: https://github.com/mininet/openflow-tutorial/wiki
+
+procedure to test is the same as above but with different files:
+1. first run controller specifying which exercise you're running ex. AdvancedTopology
+cd pox
+./pox.py log.level --DEBUG misc.AdvancedTopology misc.full_payload
+
+2. open another terminal and run topology (remember to specify the pato to your topology file in the command below:
+sudo mn --custom pathtotopo/mytopologyadvanced.py --topo mytopologyadvanced--mac --switch ovsk --controller remote
+
+3. open another terminal and check out the flows installed (the ones installed in AdvancedTopology.py should be different than the ones fr
+  installed in Firewall.py)
+  
+  check flow tables installed with:
+  - sudo ovs-ofctl dump-flows s1
+  - sudo ovs-ofctl dump-flows s2
