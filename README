@@ -39,11 +39,14 @@ cd pox
 ./pox.py log.level --DEBUG misc.AdvancedTopology misc.full_payload
 
 2. open another terminal and run topology (remember to specify the pato to your topology file in the command below:
-sudo mn --custom pathtotopo/mytopologyadvanced.py --topo mytopologyadvanced--mac --switch ovsk --controller remote
+    sudo mn --custom pathtotopo/mytopologyadvanced.py --topo mytopologyadvanced--mac --switch ovsk --controller remote
 
-3. open another terminal and check out the flows installed (the ones installed in AdvancedTopology.py should be different than the ones fr
+3. in the mininete terminal run the pingall command first so that all tables are filled;
+    mininet> pingall
+
+4. open another terminal and check out the flows installed (the ones installed in AdvancedTopology.py should be different than the ones fr
   installed in Firewall.py)
   
-  check flow tables installed with:
-  - sudo ovs-ofctl dump-flows s1
-  - sudo ovs-ofctl dump-flows s2
+    check flow tables installed with:
+    - sudo ovs-ofctl dump-flows s1
+    - sudo ovs-ofctl dump-flows s2
