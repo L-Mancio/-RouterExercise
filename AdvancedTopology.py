@@ -1,5 +1,3 @@
-
-
 """
 This component is a mininet exercise, specifically the Advanced Topology Exercise 
 
