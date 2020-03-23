@@ -1,11 +1,7 @@
 
 
 """
-This component is a mininet exercise, specifically the Advanced Topology Exercise and this ia Luca Mancini's Implementation
-
-comandi utili
-scp fungeflow2.py mininet@192.168.249.3:pox/pox/misc
-
+This component is a mininet exercise, specifically the Firewall exercise
 """
 
 from pox.core import core
