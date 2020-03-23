@@ -28,6 +28,8 @@ $ iperf -s
 in host1:
 $ iperf -c 10.0.3.100
 
+UPDATE:
+
 AdvancedTopology is the same as router2.py with a few modifications to the code, and working iperf command between 2 different subnets
 Firewall.py is the last part of the mininet tutorial linked here: https://github.com/mininet/openflow-tutorial/wiki
 
