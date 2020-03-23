@@ -12,7 +12,7 @@ cd pox
 2. open another terminal and run topology (remember to specify the pato to your topology file in the command below:
     sudo mn --custom pathtotopo/mytopologyadvanced.py --topo mytopologyadvanced--mac --switch ovsk --controller remote
 
-3. in the mininete terminal run the pingall command first so that all tables are filled;
+3. in the mininet terminal run the pingall command first so that all tables are filled;
     mininet> pingall
 
 4. open another terminal and check out the flows installed (the ones installed in AdvancedTopology.py should be different than the ones fr
